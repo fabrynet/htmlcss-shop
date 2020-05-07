@@ -47,7 +47,8 @@ main {
 .heart {
   position: absolute;
   bottom: 5px;
-  left: 150px;
+  width: 100%;
+  text-align: center;
   display: none;
 }
 .heart::before {
