@@ -29,32 +29,35 @@ main {
 /* sconti */
 .sale {
   position: absolute;
-  top: 5px;
-  right: 5px;
+  top: 0px;
+  right: 0px;
+  padding: 5px;
+}
+.green {
+  background-color: green;
+}
+.red {
+  background-color: red;
 }
 .green::before {
   content: "-30\0025";
-  background-color: green;
-  padding: 5px;
 }
-.red:before {
+.red::before {
   content: "-5\0025";
-  background-color: red;
-  padding: 5px;
 }
 
 /* cuore */
 .heart {
+  display: none;
   position: absolute;
   bottom: 5px;
   width: 100%;
   text-align: center;
-  display: none;
+  font-size: 25px;
+  color: red;
 }
 .heart::before {
   content: "\2665";
-  font-size: 25px;
-  color: red;
 }
 .item:hover .heart {
   display: block;
