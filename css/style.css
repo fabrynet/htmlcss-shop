@@ -9,12 +9,13 @@
 main {
   margin: 0 auto;
   width: 1000px;
-  height: 800px;
+  height: 789px;
   border: 1px solid black;
 }
 .row {
   width: 910px;
   height: 372px;
+  /* il margine bottom della prima riga non si somma al margine top della seconda */
   margin: 15px auto 15px;
 }
 
