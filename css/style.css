@@ -27,39 +27,43 @@ main {
   position: relative;
 }
 
-/* sconti */
-.sale {
+/* sconti sui prodotti */
+.item .sale {
   position: absolute;
   top: 0px;
   right: 0px;
   padding: 5px;
 }
-.green {
+.item .sale.green {
   background-color: green;
 }
-.red {
+.item .sale.red {
   background-color: red;
 }
-.green::before {
+.item .sale.green::before {
   content: "-30\0025";
 }
-.red::before {
+.item .sale.red::before {
   content: "-5\0025";
 }
 
-/* cuore */
-.heart {
+/* cuore su prodotto */
+.item .heart {
   display: none;
   position: absolute;
+  left: 0;
   bottom: 5px;
   width: 100%;
   text-align: center;
   font-size: 25px;
   color: red;
 }
-.heart::before {
+.item .heart::before {
   content: "\2665";
 }
+.item:hover {
+  cursor: pointer;
+}
 .item:hover .heart {
-  display: block;
+  display: inline-block;
 }
