@@ -1,9 +1,61 @@
-/* impostazioni generali pagina */
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+
+/* reset margini pagina */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+/* regole generali */
+body {
+  font-family: Balsamiq Sans,sans-serif;
+}
+.inline-menu li {
+  display: inline-block;
+  padding: 0 10px 0;
+  font-size: 20px;
+}
+.inline-menu li a {
+  text-decoration: none;
+  color: #000;
+}
+.inline-menu li a:visited {
+  color: #000;
+}
+
+/* header del sito */
+.header-nav {
+  position: relative;
+  margin: 10px;
+  height: 100px;
+  background-color: lightgrey;
+}
+/* logo */
+.header-nav .header-logo {
+  display: inline-block;
+  height: 100%;
+  width: 334px;
+}
+.header-logo img {
+  width: 100%;
+  vertical-align: middle;
+}
+/* menu */
+.header-nav .header-menu {
+  position: absolute;
+  /* display: inline-block; */
+  width: 50%;
+  text-align: right;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/* titolo principale */
+.title h1 {
+  line-height: 100px;
+  text-align: center;
+}
+
 
 /* parte principale dello shop  */
 main {
