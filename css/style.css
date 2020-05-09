@@ -25,19 +25,21 @@ body {
 
 /* header del sito */
 .header-nav {
-  position: relative;
-  margin: 10px;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
   height: 100px;
   background-color: lightgrey;
 }
 /* logo */
 .header-nav .header-logo {
   display: inline-block;
-  height: 100%;
-  width: 334px;
+  height: 80px;
+  /* width: 300px; */
+  margin: 10px;
 }
 .header-logo img {
-  width: 100%;
+  height: 100%;
   vertical-align: middle;
 }
 /* menu */
@@ -46,11 +48,19 @@ body {
   /* display: inline-block; */
   width: 50%;
   text-align: right;
-  right: 0;
+  right: 10px;
   top: 50%;
   transform: translateY(-50%);
 }
 /* titolo principale */
+.title {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  top: 100px;
+  left: 0;
+  background-color: #fff;
+}
 .title h1 {
   line-height: 100px;
   text-align: center;
@@ -58,10 +68,12 @@ body {
 
 
 /* parte principale dello shop  */
-main {
-  margin: 0 auto;
+.shop {
+  position: relative;
+  top: 200px;
   width: 1000px;
-  height: 789px;
+  height: 1180px;
+  margin: 0 auto;
   border: 1px solid black;
 }
 .row {
