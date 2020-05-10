@@ -22,6 +22,10 @@ body {
 .inline-menu li a:visited {
   color: #000;
 }
+.inline-menu li a:hover {
+  font-size: 30px;
+  transition: font-size 1s;
+}
 
 /* header del sito */
 .header-nav {
